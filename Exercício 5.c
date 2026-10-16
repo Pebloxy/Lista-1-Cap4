@@ -20,7 +20,6 @@ int main(void) {
         printf("\n=================================");
         printf("\n--- Envio do Pacote %d de %d ---\n", i, pacotes);
 
-        // Loop de validação do tipo de frete
         while (1) {
             printf("Digite o tipo de frete (N - Normal, E - Expresso): ");
             scanf(" %c", &tipo);
@@ -39,20 +38,18 @@ int main(void) {
 
         acrescimo = 0;
 
-        // Frete Normal (N)
         if (tipo == 'N' || tipo == 'n') {
             if (distancia <= 100) {
-                acrescimo = 0; // Tarifa base sem alteração
+                acrescimo = 0;
             } else {
-                acrescimo = tarifa_base * 0.05; // 5%
+                acrescimo = tarifa_base * 0.05;
             }
         }
-        // Frete Expresso (E)
         else if (tipo == 'E' || tipo == 'e') {
             if (distancia <= 100) {
-                acrescimo = tarifa_base * 0.10; // 10%
+                acrescimo = tarifa_base * 0.10;
             } else {
-                acrescimo = tarifa_base * 0.15; // 15%
+                acrescimo = tarifa_base * 0.15;
             }
         }
 
