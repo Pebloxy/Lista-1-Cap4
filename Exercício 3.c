@@ -1,3 +1,10 @@
+/*
+Exercício 3
+Gráfica Rápida (Impressões em Lote)
+Uma gráfica cobra pelas cópias dependendo da cor e da quantidade. Use um loop while que continue solicitando
+trabalhos de impressão até que o usuário informe uma quantidade de páginas igual a 0.
+*/
+
 #include <stdio.h>
 
 int main(void) {
